@@ -18,3 +18,6 @@
 ### Main
 - Funcionabilidade do easter egg, interface do sistema, e o próprio main.
 - do while + switch case para atribuir cada funcionabilidade do programa.
+## Requisitos adicionais
+### Valor com desconto
+- O valor com desconto é calculado a partir do seu ranking na livraria (isso faz parte do easterEgg) onde quanto maior o ranking maior o desconto no valor do livro emprestado.
