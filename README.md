@@ -27,6 +27,8 @@
 ### ArrayList
 - É utilizado em todo o código, sendo capaz de armazenar elementos em uma única váriavel de forma dinâmica.
 - Pode ser visto em: 'Cliente' onde está armazenada todos os livros que aquele usúario pegou emprestado; em 'Biblioteca' armazenando todos os livros existentes na biblioteca e todos os usúarios criados; na 'Main' é utilizado apenas para passagem de valores.
+### Encapsulamento
+- Utilização de métodos getters e setters em todas as classes e em chamadas (ex: livro.getValor() e cliente.setRank(rankAtual+1) ).
 ## Requisitos adicionais
 ### Valor com desconto
 - O valor com desconto é calculado a partir do seu ranking na livraria (isso faz parte do easterEgg) onde quanto maior o ranking maior o desconto no valor do livro emprestado.
