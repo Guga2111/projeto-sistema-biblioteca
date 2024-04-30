@@ -24,9 +24,22 @@ public class Biblioteca {
         return lista_clientes;
     }
     public void adicionarLivro(String titulo, String autor, String ID, String status, String tipo, double valor){
-        lista_livros.add( new Livro(titulo, autor, ID, status, tipo, valor));
 
-        System.out.println("O livro foi adicionado ao Sistema!");
+        boolean existe = false;
+        for(int i = 0; i < lista_livros.size(); i++){
+            if(titulo.equals(lista_livros.get(i).getTitulo())){
+                existe = true;
+                break;
+            }
+        }
+
+        if(existe){
+            System.out.println("O nome do livro digitado já existe!");
+        } else{
+            lista_livros.add( new Livro(titulo, autor, ID, status, tipo, valor));
+            System.out.println("O livro foi adicionado ao Sistema!");
+        }
+
     }
 
     public void removerLivro(String nome){
@@ -45,9 +58,22 @@ public class Biblioteca {
     }
 
     public void adicionarCliente(String nome, String endereco, String telefone, String ID){
-        lista_clientes.add( new Cliente(nome, endereco, telefone, ID, 0, 1));
 
-        System.out.println("O usuário " + nome + " foi adicionado!");
+        boolean existe = false;
+        for(int i = 0; i < lista_clientes.size(); i++){
+            if(nome.equals(lista_clientes.get(i).getNome())){
+                existe = true;
+                break;
+            }
+        }
+
+        if(existe){
+            System.out.println("O nome " + nome + " já existe no sistema!");
+        } else{
+            lista_clientes.add( new Cliente(nome, endereco, telefone, ID, 0, 1));
+            System.out.println("O usuário " + nome + " foi adicionado!");
+        }
+
     }
 
     public void removerCliente(String nome){
