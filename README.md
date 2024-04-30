@@ -10,6 +10,7 @@
 ### Livro
 - Classe com atributos título da obra, autor do livro, id do livro, status do livro (emprestado ou disponível) e o tipo do livro (romance,comédia,etc).
 - Métodos getters e setters.
+- Adiconado avaliações do livro (Arraylist do tipo double) e avaliaçõesMédia para os atributos dessa classe.
 ### Biblioteca
 - Funciona como classe onde junta todas as funcionabilidades do sistema.
 - Classe com apenas dois atributos, são eles um ArrayList do tipo 'Livro' para lista de livros e outro ArrayList do tipo 'Cliente' para lista de clientes.
